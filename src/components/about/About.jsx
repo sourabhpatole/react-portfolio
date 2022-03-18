@@ -1,6 +1,8 @@
 import React from "react";
 import "./about.css";
-import Award from "../../img/award.png";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import Award from "../../img/award.png";
 
 const About = () => {
   return (
@@ -29,9 +31,9 @@ const About = () => {
         </p>
 
         <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
+          {/* <div className="a-award-social"></div> */}
           <div className="a-award-texts">
-            <h4 className="a-award-title">International Design Awards 2021</h4>
+            {/* <h4 className="a-award-title">International Design Awards 2021</h4> */}
             <p className="a-award-desc">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
               and fugit.
