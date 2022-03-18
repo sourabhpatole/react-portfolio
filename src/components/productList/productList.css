@@ -39,3 +39,14 @@
     display: none;
   }
 }
+@media screen and (max-width: 480) {
+  .pl {
+    padding: 11px;
+  }
+  .pl-texts {
+    width: 100%;
+  }
+  .pl-desc {
+    display: none;
+  }
+}

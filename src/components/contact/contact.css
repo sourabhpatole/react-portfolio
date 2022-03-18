@@ -66,3 +66,32 @@ button {
   padding: 15px;
   border-radius: 4px;
 }
+@media screen and (max-width: 480px) {
+  .c-wraper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+  .c-title {
+    font-size: 30px;
+  }
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .c-desc {
+    display: none;
+  }
+  form {
+    margin: top 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input {
+    width: 38%;
+    height: 42px;
+    margin: 3px;
+  }
+  button {
+    margin-top: 12px;
+  }
+}
