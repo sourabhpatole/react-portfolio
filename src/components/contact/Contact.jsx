@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="c-bg"> </div>
       <div className="c-wraper">
         <div className="c-left">
-          <h2 className="c-title">Let's discuss your projects</h2>
+          <h2 className="c-title">Let's discuss about projects</h2>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
@@ -48,7 +48,17 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img src={Address} alt="" className="c-icon" />
-              Pune
+              <div className="google-map w-100">
+                <iframe
+                  title="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.658193101659!2d73.68696255796496!3d18.604833938882503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbdc8bc9a5f3%3A0xad6f655c5024db03!2sA15%20Xrbia!5e0!3m2!1sen!2sin!4v1648014286106!5m2!1sen!2sin"
+                  width="400"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

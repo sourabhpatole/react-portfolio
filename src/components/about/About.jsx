@@ -2,12 +2,8 @@ import React, { useContext } from "react";
 import "./about.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { ThemeContext } from "../../context/context";
-import { Button } from "@mui/material";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import Award from "../../img/award.png";
+import { ThemeContext } from "../../context/context";
 
 const About = () => {
   const theme = useContext(ThemeContext);
@@ -34,7 +30,12 @@ const About = () => {
               href={"https://github.com/sourabhpatole"}
               target="_blank"
             >
-              <GitHubIcon />
+              <GitHubIcon
+                style={{
+                  fontSize: "42px",
+                  backgroundColor: darkMode && "white",
+                }}
+              />
             </a>
             <a
               // style={{ backgroundColor: darkMode && "#333" }}
@@ -42,10 +43,21 @@ const About = () => {
               href={"https://www.linkedin.com/in/sourabh-p-4b9568136/"}
               target="_blank"
             >
-              <LinkedInIcon />
+              <LinkedInIcon
+                style={{
+                  fontSize: "42px",
+                  backgroundColor: darkMode && "white",
+                }}
+              />
               {/* resume link */}
-              <a href="" className="b-icon">
-                <AttachFileIcon style={{ color: "black" }} />
+              <a href="" className="b-icon ">
+                <AttachFileIcon
+                  style={{
+                    // color: "black",
+                    fontSize: "42px",
+                    backgroundColor: darkMode && "white",
+                  }}
+                />
               </a>
             </a>
           </div>

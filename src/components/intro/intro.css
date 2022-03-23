@@ -46,18 +46,12 @@
   50% {
     transform: translateY(-100px);
   }
-  75% {
-    transform: translateY(-150px);
-  }
-  100% {
-    transform: translateY(-200px);
-  }
 }
 .i-title-item {
   height: 50px;
   font-size: 28px;
   font-weight: bold;
-  color: lightslategrey;
+  color: rgb(247, 7, 119);
   display: flex;
   align-items: center;
 }

@@ -15,13 +15,24 @@
   position: sticky;
   z-index: 2;
 }
+.p-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33px;
+  font-weight: 600;
+  background-color: teal;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 .p-circle {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   margin: 3px;
-  background-color: white;
+  background-color: rgb(139, 133, 133);
 }
 
 .p-img {

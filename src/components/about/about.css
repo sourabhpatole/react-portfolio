@@ -102,13 +102,12 @@
 }
 .social-button {
   margin: 30px;
-  /* margin-left: 40px; */
+  margin-left: 40px;
   height: 100%;
 }
 .b-icon {
   margin: 12px;
-
-  color: black;
+  color: rgb(22, 21, 21);
 }
 @media screen and (max-width: 480px) {
   .a {
