@@ -26,7 +26,13 @@ export const products = [
   {
     id: 5,
     img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1647844013/newsapp_cluoit.png",
-    link: "",
+    link: "https://github.com/sourabhpatole/newsapp",
     name: "News APP",
+  },
+  {
+    id: 6,
+    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1648642097/simpleshop_zbjnnn.png",
+    link: "https://github.com/sourabhpatole/shop",
+    name: "Simple Shop",
   },
 ];
