@@ -50,7 +50,13 @@ const About = () => {
                 }}
               />
               {/* resume link */}
-              <a href="" className="b-icon ">
+              <a
+                href={
+                  "https://drive.google.com/file/d/1sZjdaL8-CIyGP8m-Gg_gu--VrcHeiEs7/view?usp=sharing"
+                }
+                className="b-icon "
+                target="_blank"
+              >
                 <AttachFileIcon
                   style={{
                     // color: "black",

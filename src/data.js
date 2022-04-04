@@ -3,19 +3,19 @@ export const products = [
     id: 1,
     img: "https://ik.imagekit.io/gfznj5ukgkq/blog_1KHW0LT5s.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647599877450",
     link: "https://github.com/sourabhpatole/blog",
-    name: "MERN Blog",
+    name: "Blog",
   },
   {
     id: 2,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/travel_map_MYTIoEmo5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600005729",
-    link: "https://github.com/sourabhpatole/mappin",
-    name: "Travel Log",
+    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1649057008/simpleshop_pmudst.png",
+    link: "https://github.com/sourabhpatole/shop",
+    name: "Simple Store",
   },
   {
     id: 3,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/shopping_vtDsi1s9_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600006533",
-    link: "",
-    name: "ECommerce",
+    img: "https://ik.imagekit.io/gfznj5ukgkq/travel_map_MYTIoEmo5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600005729",
+    link: "https://github.com/sourabhpatole/mappin",
+    name: "Travel Log",
   },
   {
     id: 4,
@@ -31,8 +31,8 @@ export const products = [
   },
   {
     id: 6,
-    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1648642097/simpleshop_zbjnnn.png",
-    link: "https://github.com/sourabhpatole/shop",
-    name: "Simple Shop",
+    img: "https://ik.imagekit.io/gfznj5ukgkq/shopping_vtDsi1s9_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600006533",
+    link: "",
+    name: "Shopping Store",
   },
 ];
