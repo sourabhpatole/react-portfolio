@@ -22,6 +22,7 @@ const ProductList = () => {
             img={item.img}
             link={item.link}
             name={item.name}
+            netlify={item.netlify}
           />
         ))}
       </div>

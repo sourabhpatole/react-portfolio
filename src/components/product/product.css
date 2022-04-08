@@ -8,21 +8,38 @@
 }
 
 .p-browser {
-  height: 20px;
+  height: 25px;
   background-color: rgb(243, 242, 242);
   display: flex;
   align-items: center;
   position: sticky;
   z-index: 2;
 }
+.p-lower {
+  display: flex;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 8px;
+  font-size: 40px;
+  z-index: 999;
+}
+.p-icon {
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  margin-inline: 23px;
+  cursor: pointer;
+}
 .p-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 33px;
+  margin-left: 62px;
+  font-size: 18px;
   font-weight: 600;
-  background-color: teal;
-  color: aliceblue;
+  color: rgb(21, 33, 44);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
