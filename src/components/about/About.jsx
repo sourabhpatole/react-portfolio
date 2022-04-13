@@ -4,6 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import { ThemeContext } from "../../context/context";
+import { Button } from "@mui/material";
 
 const About = () => {
   const theme = useContext(ThemeContext);
@@ -57,13 +58,19 @@ const About = () => {
                 className="b-icon "
                 target="_blank"
               >
-                <AttachFileIcon
+                <Button
+                  className="link"
                   style={{
-                    // color: "black",
-                    fontSize: "42px",
+                    color: "black",
+                    textDecoration: "none",
+                    color: "inherit",
+                    marginLeft: "20px",
+                    marginTop: "0px",
                     backgroundColor: darkMode && "white",
                   }}
-                />
+                >
+                  Resume
+                </Button>
               </a>
             </a>
           </div>
