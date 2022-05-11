@@ -24,7 +24,14 @@ export const products = [
     id: 4,
     img: "https://ik.imagekit.io/gfznj5ukgkq/travel_map_MYTIoEmo5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600005729",
     link: "https://github.com/sourabhpatole/mappin",
-    netlify: "https://simplemap.herokuapp.com/",
+    netlify: "https://simplemappro.herokuapp.com//",
     name: "MERN Travel Log",
+  },
+  {
+    id: 5,
+    img: "https://ik.imagekit.io/gfznj5ukgkq/screenshot_FoBOKDuSS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652249462455",
+    link: "https://github.com/sourabhpatole/feedback-app",
+    netlify: "https://feedback-formpro.netlify.app/",
+    name: "Feedback UI form",
   },
 ];
