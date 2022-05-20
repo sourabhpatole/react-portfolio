@@ -34,4 +34,11 @@ export const products = [
     netlify: "https://feedback-formpro.netlify.app/",
     name: "Feedback UI form",
   },
+  {
+    id: 6,
+    img: "https://ik.imagekit.io/gfznj5ukgkq/shopping_tgbD6b-jU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653083496110",
+    link: "https://github.com/sourabhpatole/fake_store",
+    netlify: "https://fake-storepro.netlify.app/",
+    name: "Store Fake-api",
+  },
 ];
