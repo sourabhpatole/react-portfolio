@@ -53,7 +53,7 @@ const About = () => {
               {/* resume link */}
               <a
                 href={
-                  "https://drive.google.com/file/d/1sZjdaL8-CIyGP8m-Gg_gu--VrcHeiEs7/view?usp=sharing"
+                  "https://drive.google.com/file/d/1SCWz_oWZxQwdAoFpCzvF0h3W2qt9LB-j/view?usp=sharing"
                 }
                 className="b-icon "
                 target="_blank"
