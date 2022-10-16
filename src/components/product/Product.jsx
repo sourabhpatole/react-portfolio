@@ -10,7 +10,7 @@ const Product = ({ img, link, netlify, name }) => {
           <div className="p-circle"></div>
           <div className="p-circle"></div>
           <div className="p-circle"></div>
-          <div className="p-title">{name}</div>
+          {/* <div className="p-title">{name}</div> */}
         </div>
         <div className="p-lower">
           <div>
@@ -22,6 +22,7 @@ const Product = ({ img, link, netlify, name }) => {
             <GoMarkGithub className="p-icon" target="_blank" />
           </a>
         </div>
+        <div className="p-icon-font">{name}</div>
 
         <img src={img} alt="" className="p-img" />
       </div>

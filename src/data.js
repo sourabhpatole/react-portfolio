@@ -29,7 +29,7 @@ export const products = [
   },
   {
     id: 5,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/screenshot_FoBOKDuSS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652249462455",
+    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1665913534/youtube-clone_blmcqa.png",
     link: "https://github.com/sourabhpatole/feedback-app",
     netlify: "https://feedback-formpro.netlify.app/",
     name: "Feedback UI form",

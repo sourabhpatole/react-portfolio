@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./about.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import AttachFileIcon from "@mui/icons-material/AttachFile";
+import Sourabh from "../../img/Sourabh.png";
 import { ThemeContext } from "../../context/context";
 import { Button } from "@mui/material";
 
@@ -30,6 +30,7 @@ const About = () => {
               className="b-icon"
               href={"https://github.com/sourabhpatole"}
               target="_blank"
+              rel="noreferrer"
             >
               <GitHubIcon
                 style={{
@@ -43,6 +44,7 @@ const About = () => {
               className="b-icon"
               href={"https://www.linkedin.com/in/sourabh-p-4b9568136/"}
               target="_blank"
+              rel="noreferrer"
             >
               <LinkedInIcon
                 style={{
@@ -57,27 +59,40 @@ const About = () => {
                 }
                 className="b-icon "
                 target="_blank"
-              >
-                <Button
-                  className="link"
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    color: "inherit",
-                    marginLeft: "20px",
-                    marginTop: "0px",
-                    backgroundColor: darkMode && "white",
-                  }}
-                >
-                  Resume
-                </Button>
-              </a>
+                rel="noreferrer"
+              ></a>
             </a>
           </div>
         </p>
 
         <div className="a-award">
-          {/* <div className="a-award-social"></div> */}
+          <div className="social-button">
+            <Button className="link">
+              <a
+                href={
+                  "https://drive.google.com/file/d/1S68WjNztSD8znbsg7lw012y5rNVdgYzL/view?usp=sharing"
+                }
+                className=""
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  marginLeft: "20px",
+                  marginTop: "0px",
+                  backgroundColor: darkMode && "white",
+                }}
+              >
+                Resume
+              </a>
+            </Button>
+            <img
+              className="award-image"
+              src={Sourabh}
+              alt="Sourabh Resume"
+              style={{ height: "130px", marginLeft: "20px" }}
+            />
+          </div>
           <div className="a-award-texts">
             {/* <h4 className="a-award-title">International Design Awards 2021</h4> */}
             <p className="a-award-desc">

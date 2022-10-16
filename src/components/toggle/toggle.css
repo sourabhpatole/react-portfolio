@@ -24,3 +24,22 @@
   position: absolute;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  .toggle {
+    position: fixed;
+    height: 7vh;
+    width: 61px;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    height: 25px;
+    border-radius: 20px;
+    background: white;
+  }
+  .t-button {
+    border-radius: 50%;
+    width: 29px;
+    background-color: grey;
+    height: 29px;
+  }
+}

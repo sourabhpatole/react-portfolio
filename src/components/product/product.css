@@ -20,13 +20,16 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-self: center;
   justify-content: center;
   margin: 8px;
   font-size: 40px;
   z-index: 999;
 }
 .p-icon {
-  color: black;
+  background-color: inherit;
+  color: rgb(134, 133, 133);
   font-size: 40px;
   font-weight: 400;
   margin-inline: 23px;
@@ -39,7 +42,8 @@
   margin-left: 62px;
   font-size: 18px;
   font-weight: 600;
-  color: rgb(21, 33, 44);
+  /* color: rgb(21, 33, 44); */
+  color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -60,10 +64,22 @@
 .p:hover .p-img {
   transform: translateY(-100%);
 }
+.p-icon-font {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 480px) {
   .p {
     width: 40%;
     height: 23vh;
   }
+}
+@media screen and (max-width: 1013px) {
 }
