@@ -55,7 +55,7 @@ const About = () => {
               {/* resume link */}
               <a
                 href={
-                  "https://drive.google.com/file/d/14gP1YvhIW-L2hEOx9hlT9stqzAxdOius/view?usp=sharing"
+                  "https://drive.google.com/file/d/1quvCCU1ke_0AWE3Nqj8qRTAQx6TkHFs2/view?usp=sharing"
                 }
                 className="b-icon "
                 target="_blank"
@@ -70,7 +70,7 @@ const About = () => {
             <Button className="link">
               <a
                 href={
-                  "https://drive.google.com/file/d/14gP1YvhIW-L2hEOx9hlT9stqzAxdOius/view?usp=sharing"
+                  "https://drive.google.com/file/d/1quvCCU1ke_0AWE3Nqj8qRTAQx6TkHFs2/view?usp=sharing"
                 }
                 className=""
                 target="_blank"
