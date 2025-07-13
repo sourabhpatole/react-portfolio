@@ -42,7 +42,8 @@ const About = () => {
             <a
               // style={{ backgroundColor: darkMode && "#333" }}
               className="b-icon"
-              href={"https://www.linkedin.com/in/sourabh-p-4b9568136/"}
+              // href={"https://www.linkedin.com/in/sourabh-p-4b9568136/"}
+              href={"https://www.linkedin.com/in/sourabh-patole-4b9568136/"}
               target="_blank"
               rel="noreferrer"
             >
@@ -70,7 +71,7 @@ const About = () => {
             <Button className="link">
               <a
                 href={
-                  "https://drive.google.com/file/d/1quvCCU1ke_0AWE3Nqj8qRTAQx6TkHFs2/view?usp=sharing"
+                  "https://drive.google.com/file/d/10LDgLLfscNQUrnff-XMDF_tEu7RHi0JC/view?usp=drive_link"
                 }
                 className=""
                 target="_blank"
