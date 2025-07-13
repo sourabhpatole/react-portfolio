@@ -70,7 +70,7 @@ const About = () => {
             <Button className="link">
               <a
                 href={
-                  "https://drive.google.com/file/d/1quvCCU1ke_0AWE3Nqj8qRTAQx6TkHFs2/view?usp=sharing"
+                  "https://drive.google.com/file/d/10LDgLLfscNQUrnff-XMDF_tEu7RHi0JC/view?usp=drive_link"
                 }
                 className=""
                 target="_blank"
