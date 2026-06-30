@@ -2,7 +2,7 @@
   width: 62px;
   height: 25px;
   border-radius: 20px;
-  border: 1pz solid grey;
+  border: 1px solid grey;
   background: white;
   position: fixed;
   top: 13px;
@@ -12,10 +12,12 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .t-icon {
   width: 25px;
   height: 25px;
 }
+
 .t-button {
   width: 32px;
   height: 32px;
@@ -24,22 +26,22 @@
   position: absolute;
   cursor: pointer;
 }
+
 @media screen and (max-width: 480px) {
   .toggle {
-    position: fixed;
-    height: 7vh;
     width: 61px;
-    display: flex;
-    height: 100vh;
-    position: absolute;
     height: 25px;
     border-radius: 20px;
     background: white;
+    position: fixed;
+    top: 13px;
+    right: 15px;
   }
+
   .t-button {
-    border-radius: 50%;
     width: 29px;
-    background-color: grey;
     height: 29px;
+    border-radius: 50%;
+    background-color: grey;
   }
 }
