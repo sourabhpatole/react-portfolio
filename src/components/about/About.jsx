@@ -54,14 +54,7 @@ const About = () => {
                 }}
               />
               {/* resume link */}
-              <a
-                href={
-                  "https://drive.google.com/file/d/1quvCCU1ke_0AWE3Nqj8qRTAQx6TkHFs2/view?usp=sharing"
-                }
-                className="b-icon "
-                target="_blank"
-                rel="noreferrer"
-              ></a>
+             
             </a>
           </div>
         </p>
