@@ -71,7 +71,7 @@ const About = () => {
             <Button className="link">
               <a
                 href={
-                  "https://drive.google.com/file/d/10LDgLLfscNQUrnff-XMDF_tEu7RHi0JC/view?usp=drive_link"
+                  "https://drive.google.com/file/d/1bA1rEMPzUEcDIkLOAZFGwETz2NCfPu3o/view?usp=sharing"
                 }
                 className=""
                 target="_blank"
