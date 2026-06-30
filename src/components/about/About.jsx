@@ -3,7 +3,6 @@ import './about.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Button } from '@mui/material';
-import Me from '../../img/me.png';
 import ResumePreview from '../../img/Sourabh.png';
 import { ThemeContext } from '../../context/context';
 
