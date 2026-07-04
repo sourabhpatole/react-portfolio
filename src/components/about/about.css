@@ -4,6 +4,9 @@
   align-items: center;
   padding: 40px 0;
 }
+.award-image{
+  height: 250px;
+}
 
 .a-left {
   flex: 1;
