@@ -18,14 +18,8 @@ const ProductList = () => {
 
       <div className="pl-list">
         {products?.length > 0 &&
-          products.map(({ id, img, link, name, netlify }) => (
-            <Product
-              key={id}
-              img={img}
-              link={link}
-              name={name}
-              netlify={netlify}
-            />
+          products.map(({ id, link, name, desc, tags }) => (
+            <Product key={id} link={link} name={name} desc={desc} tags={tags} />
           ))}
       </div>
     </section>

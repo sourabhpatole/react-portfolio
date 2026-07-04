@@ -1,44 +1,23 @@
 export const products = [
   {
     id: 1,
-    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1649057008/simpleshop_pmudst.png",
-    link: "https://github.com/sourabhpatole/shop",
-    netlify: "https://simpleshoppro.herokuapp.com/",
-    name: "MERN Simple Store",
+    link: "https://github.com/sourabhpatole",
+    name: "AI-Powered Talent Acquisition Platform",
+    desc: "A multi-tenant SaaS platform featuring automated interview management, AI-driven candidate evaluation, and dynamic question generation integrated with Gemini AI.", 
+    tags: ["React.js", "Node.js", "MongoDB", "Gemini AI"] 
   },
   {
     id: 2,
-    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1649855395/messenger_eqdbo8.png",
-    link: "https://github.com/sourabhpatole/chat-app",
-    netlify: "https://simplemessengerpro.herokuapp.com/",
-    name: "MERN Messenger",
+    link: "https://github.com/sourabhpatole",
+    name: "WhatsApp Messaging SaaS Application",
+    desc: "A workflow automation SaaS platform integrating the WhatsApp Cloud API and webhooks with JWT authentication and role-based access control (RBAC).", 
+    tags: ["React.js", "Node.js", "Express.js", "WhatsApp API"] 
   },
   {
     id: 3,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/blog_1KHW0LT5s.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647599877450",
-    link: "https://github.com/sourabhpatole/blog",
-    netlify: "https://simpleblogpro.herokuapp.com/",
-    name: "MERN Blog",
-  },
-  {
-    id: 4,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/travel_map_MYTIoEmo5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647600005729",
-    link: "https://github.com/sourabhpatole/mappin",
-    netlify: "https://simplemappro.herokuapp.com//",
-    name: "MERN Travel Log",
-  },
-  {
-    id: 5,
-    img: "https://res.cloudinary.com/dt0wio0tq/image/upload/v1665913534/youtube-clone_blmcqa.png",
-    link: "https://github.com/sourabhpatole/feedback-app",
-    netlify: "https://feedback-formpro.netlify.app/",
-    name: "Feedback UI form",
-  },
-  {
-    id: 6,
-    img: "https://ik.imagekit.io/gfznj5ukgkq/shopping_tgbD6b-jU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653083496110",
-    link: "https://github.com/sourabhpatole/fake_store",
-    netlify: "https://fake-storepro.netlify.app/",
-    name: "Store Fake-api",
-  },
+    link: "https://github.com/sourabhpatole",
+    name: "Web Accessibility Enhancement Project",
+    desc: "An optimization initiative implementing ARIA roles, semantic HTML, and keyboard navigation to achieve WCAG 2.1 AA compliance and boost screen reader scores by 40%.", 
+    tags: ["React.js", "WCAG 2.1", "ARIA", "Semantic HTML"] 
+  }
 ];

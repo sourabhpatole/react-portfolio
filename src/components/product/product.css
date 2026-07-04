@@ -1,88 +1,158 @@
 .p {
-  width: 30%;
-  height: 40vh;
-  margin: 20px 10px;
-  border: 2px solid rgb(243, 242, 242);
-  border-radius: 10px 10px 0 0;
+  width: 31%;
+  height: auto; /* Let it grow naturally based on content padding */
+  min-height: 320px;
+  margin: 20px 1%;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px; /* Slightly smoother round corners */
   overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.p:hover {
+  box-shadow: 0 12px 20px -3px rgba(15, 23, 42, 0.08);
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+}
+
+/* Browser mock header */
 .p-browser {
-  height: 25px;
-  background-color: rgb(243, 242, 242);
+  height: 40px;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #f1f5f9;
   display: flex;
   align-items: center;
-  z-index: 2;
-}
-
-.p-lower {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 8px;
-  font-size: 40px;
-  z-index: 999;
+  padding: 0 16px;
   position: relative;
+  flex-shrink: 0;
 }
 
-.p-icon {
-  color: rgb(134, 133, 133);
-  font-size: 40px;
-  font-weight: 400;
-  margin-inline: 23px;
-  cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.p-icon:hover {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.p-title {
+.p-circles-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 62px;
-  font-size: 18px;
-  font-weight: 600;
-  color: black;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  gap: 6px;
+  position: absolute;
+  left: 16px;
 }
 
 .p-circle {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin: 3px;
-  background-color: rgb(139, 133, 133);
 }
+.p-circle.red { background-color: #ff5f56; }
+.p-circle.yellow { background-color: #ffbd2e; }
+.p-circle.green { background-color: #27c93f; }
 
-.p-img {
+.p-title {
   width: 100%;
-  transition: transform 10s ease;
-}
-
-.p:hover .p-img {
-  transform: translateY(-100%);
-}
-
-.p-icon-font {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  position: relative;
-  z-index: 999;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 70px;
 }
 
-@media screen and (max-width: 480px) {
+/* Body Content Alignment Adjustments */
+.p-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: #ffffff;
+}
+
+.p-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left; /* Changes text alignment from center to professional left */
+}
+
+.p-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+/* Polished Tech Stack Tags */
+.p-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-start; /* Aligns tags cleanly to the left */
+}
+
+.p-tag {
+  font-family: system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 550;
+  color: #0f172a;
+  background-color: #f8fafc; /* Sleek workspace color background */
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+/* Subtle accent variations for specific tags on hover */
+.p-tag:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+/* Button Layout Adjustments */
+.p-actions {
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.p-btn {
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.3px;
+}
+
+.p-btn.primary {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: 1px solid #0f172a;
+}
+
+.p-btn.primary:hover {
+  background-color: #1e293b;
+  border-color: #1e293b;
+}
+
+/* Responsive Grid Adjustments */
+@media screen and (max-width: 1024px) {
   .p {
-    width: 40%;
-    height: 23vh;
+    width: 46%;
+    margin: 15px 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p {
+    width: 96%;
+    margin: 12px 2%;
   }
 }
