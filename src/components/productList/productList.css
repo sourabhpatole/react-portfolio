@@ -21,10 +21,13 @@
 }
 
 .pl-list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start; /* Ensures card 4 aligns perfectly left under card 1 */
+  gap: 24px; /* Uniform spacing between columns and rows */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 @media screen and (max-width: 480px) {

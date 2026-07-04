@@ -1,27 +1,40 @@
+/* Apply globally within this module to prevent layout padding issues */
+.p, .p *, .pl-list {
+  box-sizing: border-box;
+}
+
+/* 1. PARENT WRAPPER CONTAINER GRID */
+.pl-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Forces exactly 3 equal columns */
+  gap: 24px; /* Clean, modern spacing between cards */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* 2. CARD COMPONENT CONTAINER */
 .p {
-  width: 31%;
-  height: auto; /* Let it grow naturally based on content padding */
-  min-height: 320px;
-  margin: 20px 1%;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px; /* Slightly smoother round corners */
-  overflow: hidden;
-  display: inline-flex;
-  flex-direction: column;
   background: #ffffff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; /* Spans the full width of its grid cell */
 }
 
 .p:hover {
-  box-shadow: 0 12px 20px -3px rgba(15, 23, 42, 0.08);
   transform: translateY(-4px);
+  box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.08);
   border-color: #cbd5e1;
 }
 
-/* Browser mock header */
+/* 3. BROWSER HEADER */
 .p-browser {
-  height: 40px;
+  height: 38px;
   background-color: #f8fafc;
   border-bottom: 1px solid #f1f5f9;
   display: flex;
@@ -39,8 +52,8 @@
 }
 
 .p-circle {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
 }
 .p-circle.red { background-color: #ff5f56; }
@@ -50,109 +63,97 @@
 .p-title {
   width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  color: #1e293b;
+  color: #334155;
   font-family: system-ui, -apple-system, sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 70px;
+  padding: 0 65px;
 }
 
-/* Body Content Alignment Adjustments */
+/* 4. CARD BODY */
 .p-body {
-  padding: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
-  background-color: #ffffff;
+  flex-grow: 1; /* Ensures body takes up remaining card height */
 }
 
 .p-main-content {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  text-align: left; /* Changes text alignment from center to professional left */
+  gap: 16px;
 }
 
 .p-desc {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #475569;
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
 }
 
-/* Polished Tech Stack Tags */
+/* 5. TECH TAGS */
 .p-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  justify-content: flex-start; /* Aligns tags cleanly to the left */
 }
 
 .p-tag {
   font-family: system-ui, sans-serif;
   font-size: 11px;
   font-weight: 550;
-  color: #0f172a;
-  background-color: #f8fafc; /* Sleek workspace color background */
-  padding: 4px 10px;
-  border-radius: 6px;
-  border: 1px solid #e2e8f0;
-  transition: all 0.2s ease;
-}
-
-/* Subtle accent variations for specific tags on hover */
-.p-tag:hover {
+  color: #475569;
   background-color: #f1f5f9;
-  border-color: #cbd5e1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
 }
 
-/* Button Layout Adjustments */
+/* 6. COMPACT BUTTON */
 .p-actions {
-  display: flex;
-  width: 100%;
   margin-top: 24px;
+  width: 100%;
 }
 
 .p-btn {
+  display: block;
   font-family: system-ui, sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
-  padding: 11px 16px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  padding: 10px 16px;
+  border-radius: 6px;
   text-align: center;
   width: 100%;
-  letter-spacing: 0.3px;
+  transition: background-color 0.15s ease;
 }
 
 .p-btn.primary {
   background-color: #0f172a;
   color: #ffffff;
-  border: 1px solid #0f172a;
 }
 
 .p-btn.primary:hover {
   background-color: #1e293b;
-  border-color: #1e293b;
 }
 
-/* Responsive Grid Adjustments */
+/* 7. RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
-  .p {
-    width: 46%;
-    margin: 15px 2%;
+  .pl-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns on Tablet viewport */
+    gap: 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .p {
-    width: 96%;
-    margin: 12px 2%;
+@media screen and (max-width: 640px) {
+  .pl-list {
+    grid-template-columns: 1fr; /* 1 Column stack on Mobile viewports */
+    gap: 16px;
+    padding: 20px 16px;
   }
 }
